@@ -4,17 +4,18 @@
  *
  * Include custom Javascript with your form.
  *
- * @version  1.3
+ * @version  1.31
  * @author   David Smith <david@gravitywiz.com>
+ * @author   Ruzgfpegk <Ruzgfpegk@zero-sum.fr>
  * @license  GPL-2.0+
- * @link     http://gravitywiz.com/
+ * @link     https://gravitywiz.com/
  *
  * Plugin Name:  Gravity Forms Custom Javascript
- * Plugin URI:   http://gravitywiz.com/
+ * Plugin URI:   https://github.com/Ruzgfpegk/gw-gravity-forms-custom-js
  * Description:  Include custom Javascript with your form.
- * Author:       Gravity Wiz
- * Version:      1.3
- * Author URI:   http://gravitywiz.com
+ * Author:       Gravity Wiz and contributors
+ * Version:      1.31
+ * Author URI:   https://gravitywiz.com
  *
  * Usage:
  *
@@ -129,7 +130,6 @@ class GF_Custom_JS {
 		$allowed_entities = array(
 			'&#039;' => '\'',
 			'&quot;' => '"',
-			''
 		);
 
 		?>
@@ -141,7 +141,7 @@ class GF_Custom_JS {
 				$( document ).bind( 'gform_post_render', function() {
 
 					<?php foreach( $this->get_script_queue() as $script ):
-						echo html_entity_decode( str_replace( array_keys( $allowed_entities ), $allowed_entities, $script ) );
+						echo html_entity_decode( str_replace( array_keys( $allowed_entities ), array_values($allowed_entities), $script ) );
 					endforeach; ?>
 
 				} );

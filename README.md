@@ -2,7 +2,7 @@
 
 WordPress Plugin by Gravity Wiz to add Custom JS to Gravity Forms.
 
-The plugin (under GPLv2+) mysteriously disappeared so I'm forking it here.
+Original URL: https://gravitywiz.com/gravity-forms-custom-javascript/
 
-I found a bug (differences between the legit JS entered and the rendered one)
-which may explain why they removed it: a fix has been applied in this fork.
+I found a bug (differences between the legit JS entered and the rendered one):
+a fix has been applied in this fork.

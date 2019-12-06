@@ -10,6 +10,7 @@
  * @author   Ruzgfpegk <Ruzgfpegk@zero-sum.fr>
  * @license  GPL-2.0+
  * @link     https://gravitywiz.com/
+ * @see      https://gravitywiz.com/gravity-forms-custom-javascript/
  *
  * Plugin Name:  Gravity Forms Custom Javascript
  * Plugin URI:   https://github.com/Ruzgfpegk/gw-gravity-forms-custom-js
